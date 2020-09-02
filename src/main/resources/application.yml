@@ -1,0 +1,18 @@
+server:
+  port: 8086
+
+spring:
+  data: 
+   mongodb:
+           database: shoppingcart
+           port: 27017
+           host: localhost
+
+kafka: 
+  broker: localhost:9092
+retry:
+    delay:
+      pattern: 1:1000;2:5000;3:10000
+    count: 3
+
+collection: ProductDetails
